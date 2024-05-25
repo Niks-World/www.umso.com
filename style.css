@@ -1,45 +1,12 @@
 /* General Styles */
-body {
-    /* font-family: Arial, sans-serif;
+ body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; */
-
-    
-    --brand: #3350ff;
-    --color: #24292e;
-    --color-lighter: #5f5f5f;
-    --color-lightest: #8c8c8c;
-    --color-danger: #e03131;
-    --color-warn: #db8f00;
-    --color-green: #28a026;
-    --bg: #fff;
-    --bg-01: #fafafa;
-    --bg-02: #f5f5f5;
-    --bg-03: #e6e6e6;
-    --bg-header: #fafafa;
-    --background-darker: #f1f1f1;
-    --input-bg: #f4f4f4;
-    --input-bg-hover: #f0f0f0;
-    --input-border: #ddd;
-    --input-border-focus: #686868;
-    --border: #eaeaea;
-    --border-light: #eee;
-    --header-bg: #fafafa;
-    --secondary-bg: #f4f4f4;
-    --active-bg: #dfe5f6;
-    --active-border: #63a1ff;
-    --active-color: #193fa2;
-    --widget-color: #000;
-    --widget-color-lighter: #222;
-    --widget-color-lightest: #959595;
-    --widget-bg-01: #f8f9fa;
-    --widget-bg-02: #e9ecef;
-    --widget-border: #eee;
-    --widget-buttonColor: #7b0fff;
-    --widget-buttonHover: #ced4da;
-    --widget-active-bg: #ced4da;
-}
+    box-sizing: border-box; 
+    background-color: #000000;
+ } 
+/*
 body {
     --btn-bg: rgba(61,61,61,.027);
     --btn-bg-hover: #96969621;
@@ -85,7 +52,7 @@ body {
     --fontWeight-text-medium: 500;
     -webkit-text-size-adjust: 100%;
     --card-textColorSecondary: rgb(161, 161, 161);
-}
+} */
 /* Navbar Section */
 .navbar {
     display: flex;
@@ -156,6 +123,11 @@ body {
     padding-bottom: 0.2em;
     --fontSize-title: 69px;
     --fontSize-title-section: 69px;
+
+}
+.banner1{
+    margin-top: 10px;
+  
 }
 
 .gradient-text {
@@ -198,18 +170,20 @@ body {
 
 /* Features Section */
 .features {
-    display: flex;
+    display: grid;
+    border: 1px solid red;
     justify-content: space-around;
     padding: 50px 20px;
-    /* background-color: #f4f4f4; */
+    gap: 20px;
 
 
+/* 
     width: 100%;
     margin: 0 auto;
     padding: 0 30px;
     position: relative;
     max-width: var(--wr-max);
-    box-sizing: border-box;
+    box-sizing: border-box; */
 }
 
 .feature-card {
@@ -299,17 +273,14 @@ body {
 }
 
 /* Footer Section */
-.footer {
+ .footer {
     background-color: #333;
     padding: 20px;
     text-align: center;
     display: grid;
     place-items: center;
 }
-.footerfff{
-    /* display: grid;
-    justify-content: flex-end; */
-}
+
 
 .footer .social-media a {
     color: white;
@@ -321,7 +292,19 @@ body {
 
 .footer .social-media a:hover {
     color: #ff6600;
+} 
+
+
+.wr {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    max-width: var(--wr-max);
+    box-sizing: border-box;
 }
+
+/* before footer */
 .btnlast{
     
     background-color: #ff0066;
