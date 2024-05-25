@@ -100,6 +100,16 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+
+
+    
+        /* position: relative;
+        background: url(/lib_LUGoPiqXXlDptSWA/amufjz1o6hqa4qle.png) center / 50px repeat, url(/lib_LUGoPiqXXlDptSWA/havnu57r2hcv4i5a.png) center / cover no-repeat;
+        padding-top: calc(3.9em + 70px);
+        padding-bottom: 0.2em;
+        --fontSize-title: 69px;
+        --fontSize-title-section: 69px;
+     */
 }
 
 .navbar ul li {
@@ -278,6 +288,12 @@ body {
     background-color: #333;
     padding: 20px;
     text-align: center;
+    display: grid;
+    place-items: center;
+}
+.footerfff{
+    /* display: grid;
+    justify-content: flex-end; */
 }
 
 .footer .social-media a {
@@ -285,6 +301,7 @@ body {
     margin: 0 10px;
     font-size: 24px;
     text-decoration: none;
+
 }
 
 .footer .social-media a:hover {
