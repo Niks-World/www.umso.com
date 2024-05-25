@@ -225,6 +225,10 @@ body {
     text-align: center;
     display: grid;
     place-items: center;
+    color: aliceblue;
+}
+.footer > li {
+    color: antiquewhite;
 }
 
 .footer .social-media a {
