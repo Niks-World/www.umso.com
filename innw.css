@@ -1,12 +1,58 @@
 /* General Styles */
-body {
+ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
     background-color: #000000;
+ } 
+/*
+body {
+    --btn-bg: rgba(61,61,61,.027);
+    --btn-bg-hover: #96969621;
+    --btn-bg-active: rgba(224,81,81,.027);
+    --btn-color: #383838;
+    --btn-color-secondary: #505050;
+    --btn-border: #9f9f9f2e;
 }
-
+body {
+    font: normal normal 400 1em 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    color: rgb(161, 161, 161);
+    margin: 0;
+    padding: 0;
+    --wr-max: 1140px;
+    position: relative;
+    --card-bg: rgb(9, 11, 14);
+    word-wrap: anywhere;
+    --color-bg: rgb(9, 11, 14);
+    background: rgb(9, 11, 14);
+    word-break: break-word;
+    --font-text: normal normal 400 1em 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    --font-title: normal normal 800 1em 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    --font-system: -apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica, Arial, sans-serif;
+    overflow-wrap: anywhere;
+    --border-width: 1px;
+    text-rendering: optimizeLegibility;
+    --color-bg-card: #f8f9fa;
+    --fontSize-text: 1em;
+    --fontSize-title: 2.5em;
+    --color-text-link: rgb(115, 38, 239);
+    --card-borderColor: rgb(49, 49, 49);
+    --card-borderWidth: 1px;
+    --card-borderRadius: 10px;
+    --color-text-primary: rgb(238, 238, 238);
+    --color-border-normal: rgb(49, 49, 49);
+    --color-accent-primary: rgb(115, 38, 239);
+    --color-text-secondary: rgb(161, 161, 161);
+    -webkit-font-smoothing: antialiased;
+    --card-textColorPrimary: rgb(238, 238, 238);
+    --fontWeight-text-heavy: 600;
+    -moz-osx-font-smoothing: grayscale;
+    --fontWeight-text-medium: 500;
+    -webkit-text-size-adjust: 100%;
+    --card-textColorSecondary: rgb(161, 161, 161);
+} */
 /* Navbar Section */
 .navbar {
     display: flex;
@@ -45,7 +91,7 @@ body {
 .auth-buttons .signup {
     margin: 0 5px;
     padding: 10px 20px;
-    border: 1px solid;
+    border: 1px solid ;
     border-radius: 10px;
     background-color: #000000;
     cursor: pointer;
@@ -77,10 +123,11 @@ body {
     padding-bottom: 0.2em;
     --fontSize-title: 69px;
     --fontSize-title-section: 69px;
-}
 
-.banner1 {
+}
+.banner1{
     margin-top: 10px;
+  
 }
 
 .gradient-text {
@@ -123,49 +170,81 @@ body {
 
 /* Features Section */
 .features {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: grid;
+    border: 1px solid red;
+    justify-content: space-around;
     padding: 50px 20px;
+    gap: 20px;
+
+
+/* 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    max-width: var(--wr-max);
+    box-sizing: border-box; */
 }
 
-.feature-card {
-    display: flex;
-    background-color: rgb(102, 69, 212);
-    /* text-emphasis-color: white; */
-    padding: 50px;
+.feature-card1 {
+    background-color: white;
+    border: 1px solid red;
+
+    padding: 20px;
+    width: 30%;
+    text-align: center;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
-
-
-
-.feature-card img {
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.feature-card-content {
-    max-width: 600px;
+.feature-card2 {
+    background-color: white;
     padding: 20px;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid red;
+
+}
+.feature-card3 {
+    background-color: white;
+    display: grid;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid red;
 
 }
 
-.feature-card-content h3 {
+.features img{
+    height: 100px;
+    width: 100px;
+}
+
+.feature-card i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #ff6600;
+    
+}
+
+.feature-card h3 {
     margin: 15px 0;
     font-size: 24px;
 }
 
-.feature-card-content p {
+.feature-card p {
     margin-bottom: 15px;
+
+    
 }
 
-.feature-card-content button {
+.feature-card button {
     padding: 10px 20px;
     background-color: #ff6600;
     color: white;
@@ -174,7 +253,7 @@ body {
     cursor: pointer;
 }
 
-.feature-card-content button:hover {
+.feature-card button:hover {
     background-color: #e55d00;
 }
 
@@ -183,6 +262,10 @@ body {
     display: flex;
     justify-content: center;
     padding: 50px 20px;
+}
+.feature-card img{
+    height: 100px;
+    width: 100px;
 }
 
 .card {
@@ -219,7 +302,7 @@ body {
 }
 
 /* Footer Section */
-.footer {
+ .footer {
     background-color: #333;
     padding: 20px;
     text-align: center;
@@ -227,21 +310,31 @@ body {
     place-items: center;
 }
 
+
 .footer .social-media a {
     color: white;
     margin: 0 10px;
     font-size: 24px;
     text-decoration: none;
+
 }
 
 .footer .social-media a:hover {
     color: #ff6600;
+} 
+
+
+.wr {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    max-width: var(--wr-max);
+    box-sizing: border-box;
 }
 
-
-
-/* Before Footer */
-.btnlast {
+/* before footer */
+.btnlast{
     margin: 80px 80px 80px 80px;
     background-color:rgb(65, 18, 204);
         color: var(--card-textColorSecondary);
@@ -251,46 +344,4 @@ body {
        justify-content: space-around;
        height: 5vw;
 
- 
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .feature-card {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .feature-card img {
-        margin-bottom: 20px;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar ul li {
-        margin: 10px 0;
-    }
-
-    .auth-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .auth-buttons .login,
-    .auth-buttons .signup {
-        margin: 10px 0;
-    }
-
-    .pricing {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 80%;
-        margin-bottom: 20px;
-    }
 }
