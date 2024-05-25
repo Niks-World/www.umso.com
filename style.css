@@ -92,7 +92,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: rgb(154,30,232);
 }
 
 .navbar ul {
@@ -100,16 +100,6 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-
-
-    
-        /* position: relative;
-        background: url(/lib_LUGoPiqXXlDptSWA/amufjz1o6hqa4qle.png) center / 50px repeat, url(/lib_LUGoPiqXXlDptSWA/havnu57r2hcv4i5a.png) center / cover no-repeat;
-        padding-top: calc(3.9em + 70px);
-        padding-bottom: 0.2em;
-        --fontSize-title: 69px;
-        --fontSize-title-section: 69px;
-     */
 }
 
 .navbar ul li {
@@ -134,18 +124,20 @@ body {
 .auth-buttons .signup {
     margin: 0 5px;
     padding: 10px 20px;
-    border: none;
+    border: 1px solid ;
+    border-radius: 10px;
+    background-color: #000000;
     cursor: pointer;
     font-size: 16px;
 }
 
 .auth-buttons .login {
-    background-color: #555;
+    background-color: #9a1ee8;
     color: white;
 }
 
 .auth-buttons .signup {
-    background-color: #ff6600;
+    background-color: #9a1ee8;
     color: white;
 }
 
@@ -158,10 +150,16 @@ body {
 .main {
     text-align: center;
     padding: 50px 20px;
+    position: relative;
+    background: url(https://www.umso.com/lib_LUGoPiqXXlDptSWA/amufjz1o6hqa4qle.png) center / 50px repeat, url(https://www.umso.com/lib_LUGoPiqXXlDptSWA/havnu57r2hcv4i5a.png) center / cover no-repeat;
+    padding-top: calc(3.9em + 70px);
+    padding-bottom: 0.2em;
+    --fontSize-title: 69px;
+    --fontSize-title-section: 69px;
 }
 
 .gradient-text {
-    background: -webkit-linear-gradient(45deg, #ff6600, #ff0066);
+    background: -webkit-linear-gradient(45deg, white, #ff0066);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 48px;
@@ -203,7 +201,15 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 50px 20px;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
+
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    max-width: var(--wr-max);
+    box-sizing: border-box;
 }
 
 .feature-card {
@@ -216,10 +222,12 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
 .feature-card i {
     font-size: 48px;
     margin-bottom: 15px;
     color: #ff6600;
+    
 }
 
 .feature-card h3 {
@@ -229,6 +237,8 @@ body {
 
 .feature-card p {
     margin-bottom: 15px;
+
+    
 }
 
 .feature-card button {
@@ -250,15 +260,20 @@ body {
     justify-content: center;
     padding: 50px 20px;
 }
+.feature-card img{
+    height: 100px;
+    width: 100px;
+}
 
 .card {
-    background-color: white;
+    background-color: rgb(16, 1, 1);
     padding: 20px;
     width: 25%;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     border-radius: 5px;
     margin: 0 10px;
+    gap: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
