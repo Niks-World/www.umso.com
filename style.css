@@ -1,0 +1,310 @@
+/* General Styles */
+body {
+    /* font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+
+    
+    --brand: #3350ff;
+    --color: #24292e;
+    --color-lighter: #5f5f5f;
+    --color-lightest: #8c8c8c;
+    --color-danger: #e03131;
+    --color-warn: #db8f00;
+    --color-green: #28a026;
+    --bg: #fff;
+    --bg-01: #fafafa;
+    --bg-02: #f5f5f5;
+    --bg-03: #e6e6e6;
+    --bg-header: #fafafa;
+    --background-darker: #f1f1f1;
+    --input-bg: #f4f4f4;
+    --input-bg-hover: #f0f0f0;
+    --input-border: #ddd;
+    --input-border-focus: #686868;
+    --border: #eaeaea;
+    --border-light: #eee;
+    --header-bg: #fafafa;
+    --secondary-bg: #f4f4f4;
+    --active-bg: #dfe5f6;
+    --active-border: #63a1ff;
+    --active-color: #193fa2;
+    --widget-color: #000;
+    --widget-color-lighter: #222;
+    --widget-color-lightest: #959595;
+    --widget-bg-01: #f8f9fa;
+    --widget-bg-02: #e9ecef;
+    --widget-border: #eee;
+    --widget-buttonColor: #7b0fff;
+    --widget-buttonHover: #ced4da;
+    --widget-active-bg: #ced4da;
+}
+body {
+    --btn-bg: rgba(61,61,61,.027);
+    --btn-bg-hover: #96969621;
+    --btn-bg-active: rgba(224,81,81,.027);
+    --btn-color: #383838;
+    --btn-color-secondary: #505050;
+    --btn-border: #9f9f9f2e;
+}
+body {
+    font: normal normal 400 1em 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    color: rgb(161, 161, 161);
+    margin: 0;
+    padding: 0;
+    --wr-max: 1140px;
+    position: relative;
+    --card-bg: rgb(9, 11, 14);
+    word-wrap: anywhere;
+    --color-bg: rgb(9, 11, 14);
+    background: rgb(9, 11, 14);
+    word-break: break-word;
+    --font-text: normal normal 400 1em 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    --font-title: normal normal 800 1em 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    --font-system: -apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica, Arial, sans-serif;
+    overflow-wrap: anywhere;
+    --border-width: 1px;
+    text-rendering: optimizeLegibility;
+    --color-bg-card: #f8f9fa;
+    --fontSize-text: 1em;
+    --fontSize-title: 2.5em;
+    --color-text-link: rgb(115, 38, 239);
+    --card-borderColor: rgb(49, 49, 49);
+    --card-borderWidth: 1px;
+    --card-borderRadius: 10px;
+    --color-text-primary: rgb(238, 238, 238);
+    --color-border-normal: rgb(49, 49, 49);
+    --color-accent-primary: rgb(115, 38, 239);
+    --color-text-secondary: rgb(161, 161, 161);
+    -webkit-font-smoothing: antialiased;
+    --card-textColorPrimary: rgb(238, 238, 238);
+    --fontWeight-text-heavy: 600;
+    -moz-osx-font-smoothing: grayscale;
+    --fontWeight-text-medium: 500;
+    -webkit-text-size-adjust: 100%;
+    --card-textColorSecondary: rgb(161, 161, 161);
+}
+/* Navbar Section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons .login,
+.auth-buttons .signup {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-buttons .login {
+    background-color: #555;
+    color: white;
+}
+
+.auth-buttons .signup {
+    background-color: #ff6600;
+    color: white;
+}
+
+.auth-buttons .login:hover,
+.auth-buttons .signup:hover {
+    opacity: 0.8;
+}
+
+/* Main Section */
+.main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.gradient-text {
+    background: -webkit-linear-gradient(45deg, #ff6600, #ff0066);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 2px solid #ff6600;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.input-group .generate {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.input-group .generate:hover {
+    background-color: #e55d00;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #ff6600;
+}
+
+.feature-card h3 {
+    margin: 15px 0;
+    font-size: 24px;
+}
+
+.feature-card p {
+    margin-bottom: 15px;
+}
+
+.feature-card button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feature-card button:hover {
+    background-color: #e55d00;
+}
+
+/* Pricing Section */
+.pricing {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 25%;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 28px;
+}
+
+.card .price {
+    font-size: 24px;
+    color: #ff6600;
+    margin: 15px 0;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card ul li {
+    margin: 10px 0;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer .social-media a:hover {
+    color: #ff6600;
+}
+.btnlast{
+    
+    background-color: #ff0066;
+        color: var(--card-textColorSecondary);
+        display: flex;
+        padding: 2em;
+        background: var(--card-bg);
+        box-shadow: var(--card-boxShadow);
+        box-sizing: border-box;
+        align-items: center;
+        border-color: var(--card-borderColor);
+        border-style: solid;
+        border-width: var(--card-borderWidth);
+        border-radius: var(--card-borderRadius);
+        border-radius: 20px;
+        justify-content: space-between;
+
+}
